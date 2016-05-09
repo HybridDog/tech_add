@@ -28,3 +28,7 @@ minetest.register_craft({
 		{"technic:sulfur_lump", "bucket:bucket_water", "technic:sulfur_lump"},
 		{'group:wood', 'technic:lead_ingot', 'group:wood'},
 }})
+
+
+technic.register_grinder_recipe({input = {"default:ice"}, output = "default:snowblock"})
+--technic.register_compressor_recipe({input = {""}, output = ""})

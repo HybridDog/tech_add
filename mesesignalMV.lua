@@ -8,6 +8,7 @@ minetest.register_node("tech_add:mv_mesesignal", {
 		},
 	active = false,
 	paramtype = "light",
+	light_source = default.LIGHT_MAX - 1,
 	technic_run = function(pos, node)
 		local meta         = minetest.get_meta(pos)
 		local machine_name = "MV Mese Signal"
@@ -40,7 +41,7 @@ minetest.register_node("tech_add:mv_mesesignal_on", {
 	infotext = "MV Mese Signal(ON)",
 	groups = {
 			snappy=2, choppy=2, oddly_breakable_by_hand=2, 
-			technic_machine=1, mesecon = 2 , mesesignal=1
+			technic_machine=1, mesecon = 2 , mesesignal=1 , not_in_creative_inventory=1
 		},
 	active = false,
 	paramtype = "light",
